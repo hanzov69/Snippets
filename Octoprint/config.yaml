@@ -1,7 +1,9 @@
 events:
+  enable: True
   subscriptions:
-  - command: curl -u USER:PASSWORD --digest -X PUT -d isOn=0 "http://SERVERADDRESS:8176/devices/Printer"
-    event: PrintDone
+  - event: PrintDone
+    command: curl -u USER:PASSWORD --digest -X PUT -d isOn=0 "http://SERVERADDRESS:8176/devices/Printer"
+    type: system
 system:
   actions:
   - action: printer on
