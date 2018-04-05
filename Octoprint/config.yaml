@@ -1,0 +1,13 @@
+events:
+  subscriptions:
+  - command: curl -u USER:PASSWORD --digest -X PUT -d isOn=0 "http://SERVERADDRESS:8176/devices/Printer"
+    event: PrintDone
+system:
+  actions:
+  - action: printer on
+    command: curl -u USER:PASSWORD --digest -X PUT -d isOn=1 "http://SERVERADDRESS:8176/devices/Printer"
+    name: Turn on the printer
+  - action: printer off
+    command: curl -u USER:PASSWORD --digest -X PUT -d isOn=0 "http://SERVERADDRESS:8176/devices/Printer"
+    confirm: You are about to turn off the printer.
+    name: Turn off the printer
