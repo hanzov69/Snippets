@@ -1,0 +1,220 @@
+@import url("reset.css");
+
+/* ---------------------------------------------------------------------------
+   HTML
+   --------------------------------------------------------------------------- */
+
+a 				{ color: #ffcc00; font-weight: bold; text-decoration: none; }
+body				{ background-color: #171717; font-size: 10pt; font-family: verdana; text-align: center; }
+
+form p				{ margin-bottom: 10px; }
+form fieldset			{ font-size: 100%; border-color: #000000; border-width: 1px 0 0 0; border-style: solid none none none; padding: 10px; margin: 0 0 0 0; }
+form fieldset fieldset		{ border: 0; clear: none; margin: 0; padding: 0; }
+form fieldset legend		{ font-size: 120%; font-weight: bold; color: #444; margin: 0 0 0 0; padding: 0 5px; }
+label				{ width: 110px; display: block; float: left; text-align: right; margin-right: 5px; clear: left; color: #666;}
+form .styled			{ background-color: #444; border: 1px solid #000; color: #fff; padding-left: 2px; }
+
+table				{ border: 1px solid #323232; width: 100% }
+table td			{ color: #fff; font-size: .8em; padding: 4px; border-bottom: 1px solid #323232; }
+table th			{ color: #fff; background-color: #323232; font-size: .8em; padding: 4px; text-align: center}
+
+/* ---------------------------------------------------------------------------
+   Generic Classes
+   --------------------------------------------------------------------------- */
+
+.subtle				{ color: #444; font-size: 70%; }
+.right				{ display: inline; float: right; }
+.left				{ display: inline; float: left; }
+.clickable			{ cursor: pointer; }
+.clear				{ clear: both; }
+.hide				{ display: none; }
+
+/* ---------------------------------------------------------------------------
+   Positioning Shortcuts
+   --------------------------------------------------------------------------- */
+
+.nudgen				{ position: relative; top: -5px; }
+.nudges				{ position: relative; top: 5px; }
+.nudgew				{ position: relative; left: 5px; }
+.nudgee				{ position: relative; left: -5px; }
+
+/* ---------------------------------------------------------------------------
+   Gator classes
+   --------------------------------------------------------------------------- */
+
+.gator_dev			{ background-color: #000; text-align: left; padding: 8px; margin: 8px; border: 1px solid #dfdfdf; color: #fff; } 
+.wtf				{ background-color: #FFFBF0; border: 1px solid #2C6F85; color: #000}
+.wtf h1				{ display: block; background-color: #2C6F85; color: #fff; font-size: 100%; padding: 5px; }
+.wtf pre			{ padding: 10px; }
+
+/* ---------------------------------------------------------------------------
+   Robotskull classes
+   --------------------------------------------------------------------------- */
+
+.alert a			{ text-decoration: underline; font-weight: normal }
+.alert_warn			{ margin: 0 auto; background-image: url('../images/alert_warn_bg.gif'); background-repeat: no-repeat; height: 39px; width: 700px; padding-left: 44px; color: #7d7d7d; font-size: 10pt; font-family: Tahoma; padding-top: 16px; }
+.alert_error			{ margin: 0 auto; background-image: url('../images/alert.red.gif'); background-repeat: no-repeat; height: 39px; width: 690px; padding-left: 40px; color: #fff; font-size: 10pt; font-weight: bold; font-family: Tahoma; padding-top: 12px; }
+.avatar_big			{ height: 150px; }
+.avatar_small			{ height: 27px; }
+.avatar_tiny			{ height: 2em; }
+.mail_icon			{ float: left; position: relative; top: 2px; padding-right: 3px; padding-left: 3px;  }
+.avatar_roster_cell		{ display: block; float: left; width: 40px; height: 55px; float: left; }
+
+/* ---------------------------------------------------------------------------
+   Layout
+   --------------------------------------------------------------------------- */
+
+#doc				{ width: 900px; margin: 0 auto; background-image: url('../images/doc_bg.gif'); font-size: 100%; text-align: center;}
+#hd				{ width: 888px; margin: 0 auto; text-align: left; }
+#bd				{ width: 888px; margin: 0 auto; text-align: left; }
+#ft				{ width: 888px; margin: 0 auto; text-align: left; }
+
+/* ---------------------------------------------------------------------------
+   Header Structure
+   --------------------------------------------------------------------------- */
+
+#hd #masthead 			{ background-image: url('../images/masthead_bg.gif'); height: 185px;  }
+#hd #masthead #mh1		{ height: 70px; }
+#hd #masthead #mh2		{ height: 60px; }
+#hd #masthead #mh3		{ height: 55px; }
+#hd #masthead #ticker		{ color: #111; font-size: .5em; }
+#hd #masthead #avatars		{ }
+#hd #nav_bar			{ background-image: url('../images/nav_bar_bg.gif'); height: 27px; color: #fff; }
+#hd #nav_bar .contents		{ padding: 3px; }
+#hd #nav_bar .right		{ padding-right: 20px; }
+
+/* ---------------------------------------------------------------------------
+   Body Structure
+   --------------------------------------------------------------------------- */
+
+#bd #sidebar			{ width: 186px; float: left; min-height: 620px;}
+#bd #sidebar_contents		{ width: 180px; color: #fff; }
+#bd .sidebar_head		{ position: relative; background-image: url('../images/sidebar_head_bg.gif'); height: 27px; }
+#bd .sidebar_head h1		{ position: absolute; top: 50%; margin-top: -8px; margin-left: 4px; font-weight: bold; }
+#bd .sidebar_body li a		{ display: block; width: 173px; padding: 2px; padding-left: 5px; color: #fff; font-weight: normal; }
+#bd .sidebar_body li a:hover	{ background-color: #111; }
+#bd .sidebar_body label		{ width: 20px; }
+#bd .sidebar_body .styled	{ width: 140px; }
+
+#bd #main			{ float: right; width: 702px; color: #fff; }
+#bd #main_contents		{ padding: 4px; }
+#bd #main_contents h1		{ background-color: #333; color: #aaa; padding: 4px; font-size: 110%; font-weight: bold; margin-bottom: 10px; margin-top: 5px; }
+#bd #main_contents h2		{ background-color: #555; color: #333; padding: 4px; font-size: 100%; font-weight: bold; margin-bottom: 10px; margin-top: 5px; }
+#bd #main_contents p		{ margin-top: 10px; margin-bottom: 10px; display: block; min-height: 1em; }
+#bd #main_contents li		{ margin-left: 34px; list-style: circle }
+
+#ft #ft_contents		{ color: #fff; font-size: .9em; padding-bottom: 10px; padding-left: 4px; }
+
+/* ---------------------------------------------------------------------------
+   Specific Pages
+   --------------------------------------------------------------------------- */
+
+/* Articles */
+
+#bd #art .art			{ margin-bottom:6px; padding:5px; background-color: #222}
+#bd #art .art .head 		{ border-bottom: 1px solid #000; padding-bottom: 10px;}
+#bd #art .art .head h1		{ border: 0; background-color: #222; font-size: 130%; font-weight: normal; padding: 0; margin: 0}
+#bd #art .art .head .user	{ padding-left: 20px; color: #ffcc00; font-weight: bold; font-face: Verdana; font-size: 100%; }
+#bd #art .art .head .time	{ color: #999; }
+#bd #art .art .body 		{ padding-top: 20px; }
+#bd #art .art .body img 	{ border: 2px solid #fff; }
+
+/* Avatar */
+
+#bd #avt #form			{ padding: 10px; }
+
+/* Babble */
+
+#bd #bab_clock			{ background: url('../images/status_bg.gif'); width: 694px; height: 14px; margin-bottom: 7px;}
+#bd #bab_clock_progress		{ background: url('../images/status_progress.gif'); height: 12px; }
+#bd #bab_form			{ margin-bottom: 15px; }
+#bd #bab_form #babble		{ height: 19px;  width: 590px; }
+#bd #bab_form #oh		{ position: relative; top:-3 }
+#bd #bab_form #bab_attach	{ position: relative; top: 3px; }
+#bd #bab_form #bab_att 		{ padding-left: 24px; display: none; }
+#bd #bab_form #bab_att #url	{ width: 200px; }
+#bd #bab_form #bab_att #title	{ width: 200px; }
+#bd #bab .bab			{ margin-bottom:6px; padding:5px; background-color: #222; border: 1px solid #222;}
+#bd #bab .bab .babble_avatar	{ float: left; display: block; margin-right: 4px; height: 27px; width: 20px; }
+#bd #bab .bab .head .user	{ color: #ffcc00; font-weight: bold; font-face: Verdana; font-size: 100%; }
+#bd #bab .bab .head .time	{ color: #444;  }
+#bd #bab .bab .head .reply a	{ color: #666; font-size: .7em; font-weight: normal }
+#bd #bab .bab .body		{ padding-left: 24px; left: 13px;}
+#bd #bab .bab .body textarea	{ width: 650px; display: none; border: 0; background-color: #000; color: #fff; }
+#bd #bab .bab .fucked		{ color: #ffcc00; cursor: pointer; }
+#bd #bab .bab .attachment	{ font-size: .8em; clear: left; color: #555; padding-top: 4px; padding-left: 4px; }
+#bd #bab .highlight		{ border: 1px solid #5E4E0F; }
+#bd #bab .highlight2		{ border: 1px solid #fff; }
+
+/* Comments */
+
+#bd #com_form			{ margin-bottom: 15px; }
+#bd #com_form #comment		{ width: 100%; }
+#bd #com .com			{ margin-bottom:6px; padding:5px; background-color: #222; border: 1px solid #222;}
+#bd #com .com .comment_avatar	{ float: left; display: block; margin-right: 4px; height: 27px; width: 20px; }
+#bd #com .com .head .user	{ color: #ffcc00; font-weight: bold; font-face: Verdana; font-size: 100%; }
+#bd #com .com .head .time	{ color: #444;  }
+#bd #com .com .head .reply a	{ color: #666; font-size: .7em; font-weight: normal }
+#bd #com .com .body		{ padding-left: 24px; left: 13px;}
+#bd #com .com .body textarea	{ width: 650px; display: none; border: 0; background-color: #000; color: #fff; }
+#bd #com .com .fucked		{ color: #ffcc00; cursor: pointer; }
+#bd #com .com .attachment	{ font-size: .8em; clear: left; color: #555; padding-top: 4px; padding-left: 4px; }
+
+/* Jerk */
+
+#bd #jrk label			{ 70px; }
+#bd #jrk #jrk_left		{ float: left;   width: 370px; }
+#bd #jrk #jrk_right		{ float: right;  width: 302px; }
+#bd #jrk #jrk_freeform		{ clear: both; padding-top: 10px; }
+#bd #jrk #jrk_pic		{ width: 300px; height: 300px; text-align: center}
+#bd #jrk #jrk_pic img		{ border: 1px solid #fff; }
+#bd #jrk #jrk_pics		{ width: 312px; }
+#bd #jrk .jrk_tn		{ width: 50px; height: 50px;  float: left; text-align: center; }
+#bd #jrk .jrk_tn img		{ valign: middle; width: 50px; height: 50px; border: 1px solid #fff; }
+
+/* Metapad */
+#mtp #header			{ text-align: left;  background-image: url('../images/sidebar_head_bg.gif'); height: 27px;}
+#mtp #containment		{ text-align: left; height: 700px; width: 1000px; position: relative; }
+#mtp .han			{ float: left; height: 7px; width: 19px; position: absolute; cursor: move }
+
+/* Notes */
+
+/* Note items on Notepage and Inbox */
+#bd #not			{ padding: 10px; color: #fff; }
+#bd #not .not			{ margin-bottom:6px; padding:5px; background-color: #222}
+#bd #not .not .avatar		{ float: left; display: block; margin-right: 4px; height: 27px; width: 20px; }
+#bd #not .not .head .user	{ color: #ffcc00; font-weight: bold; font-face: Verdana; font-size: 100%; }
+#bd #not .not .head .time	{ color: #333;  }
+#bd #not .not .body		{ padding-left: 24px; left: 13px;}
+#bd #not .not .foot		{ text-align: right; padding-top: 10px; }
+
+/* Note page */
+#bd #not #left			{ float: left; width: 520px; }
+#bd #not #right			{ float: right; width: 150px; }
+#bd #not #right	#menu h1	{ background-color: #333; margin: 0; font-size: 1em; }
+#bd #not #right	#menu		{ background-color: #323232; }
+#bd #not #right	#menu li 	{ margin-left: 0px; list-style: none }
+#bd #not #right	#menu li a		{ display: block; width: 144px; padding: 2px; padding-left: 5px; color: #fff; font-weight: normal; }
+#bd #not #right	#menu li a:hover	{ background-color: #111; }
+#bd #not #right	#h1		{ background-color: #333; }		
+
+/* Note popup pages */
+#not				{ text-align: left; color: #fff; padding: 10px; }
+#not .error			{ padding-left: 10px; font-weight: bold; }
+#not #close			{ text-align: center;  padding-top: 35px }
+#not #form_to			{ width: 200px; clear: both; }
+#not #form_text			{ width: 400px; height: 100px; clear: both; }
+#not #form_send_button		{ clear: both; float: right;}
+
+/* Profile Headers */
+
+#bd #phd ul			{ height: 30px; }
+#bd #phd li			{ display: inline; color: #fff; background-color: #333; font-weight: normal; list-style: none; }
+#bd #phd li a			{ display: block; float: left; background-color: #161616; width: 70px; padding: 2px; margin: 5px; text-align: center; border: 1px solid #ffcc00; }
+
+/* Profile: Pictures */
+
+#bd #pic .pic			{ display: block; float: left; height: 60px; width: 50px; text-align: center; margin-left: 5px;}
+#bd #pic .pic img		{ border: 1px solid #fff; margin-bottom: 3px; }
+#bd #pic .pic a			{ font-weight: normal; background-color: #161616; font-size: .7em; font-weight: normal; display: block; border: 1px solid #ffcc00; width: 50px; height: 13px;}
+#bd #pic #form			{ padding: 10px; }

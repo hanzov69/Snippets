@@ -1,0 +1,155 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.0
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 28, 2007 at 03:44 PM
+-- Server version: 5.0.27
+-- PHP Version: 5.1.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `robotskull`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `articles`
+--
+
+CREATE TABLE IF NOT EXISTS `articles` (
+  `id` int(7) unsigned NOT NULL auto_increment,
+  `users_id` int(7) unsigned NOT NULL default '0',
+  `date` datetime NOT NULL default '0000-00-00 00:00:00',
+  `title` varchar(255) NOT NULL default '',
+  `content` text NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `babble`
+--
+
+CREATE TABLE IF NOT EXISTS `babble` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `users_id` int(10) unsigned NOT NULL default '0',
+  `reply` varchar(7) NOT NULL,
+  `time` datetime default '0000-00-00 00:00:00',
+  `text` text NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `score` int(4) NOT NULL,
+  `fucked` tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=68509 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `type` int(5) NOT NULL,
+  `resource` int(7) NOT NULL,
+  `users_id` int(10) unsigned NOT NULL default '0',
+  `time` datetime default '0000-00-00 00:00:00',
+  `text` text NOT NULL,
+  `fucked` tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=395 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gator_registry`
+--
+
+CREATE TABLE IF NOT EXISTS `gator_registry` (
+  `id` varchar(10) NOT NULL,
+  `value` varchar(255) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `notes`
+--
+
+CREATE TABLE IF NOT EXISTS `notes` (
+  `id` int(7) NOT NULL auto_increment,
+  `users_id` int(7) NOT NULL default '0',
+  `rusers_id` int(7) NOT NULL default '0',
+  `time` datetime NOT NULL default '0000-00-00 00:00:00',
+  `saved` tinyint(4) NOT NULL default '0',
+  `deleted` tinyint(4) NOT NULL default '0',
+  `text` text NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4186 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `registry`
+--
+
+CREATE TABLE IF NOT EXISTS `registry` (
+  `id` varchar(10) collate latin1_general_ci NOT NULL,
+  `value` varchar(255) collate latin1_general_ci NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(10) NOT NULL auto_increment,
+  `username` varchar(20) NOT NULL default '',
+  `password` varchar(20) NOT NULL default '',
+  `name` varchar(50) NOT NULL,
+  `birthday` date NOT NULL,
+  `email` varchar(100) NOT NULL default '',
+  `phone` varchar(30) NOT NULL,
+  `zipcodes_id` varchar(5) NOT NULL,
+  `aim` varchar(40) NOT NULL,
+  `gtalk` varchar(60) NOT NULL,
+  `profile` text NOT NULL,
+  `magic` text NOT NULL,
+  `outfit` varchar(15) NOT NULL,
+  `a_str` int(2) unsigned NOT NULL default '0',
+  `a_dex` int(2) unsigned NOT NULL default '0',
+  `a_con` int(2) unsigned NOT NULL default '0',
+  `a_int` int(2) unsigned NOT NULL default '0',
+  `a_wis` int(2) unsigned NOT NULL default '0',
+  `a_cha` int(2) unsigned NOT NULL default '0',
+  `ip` varchar(40) NOT NULL default '',
+  `time_last_seen` datetime NOT NULL default '0000-00-00 00:00:00',
+  `time_first_seen` datetime NOT NULL,
+  `babble` int(7) NOT NULL default '0',
+  `admin` tinyint(1) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=120 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `zipcodes`
+--
+
+CREATE TABLE IF NOT EXISTS `zipcodes` (
+  `id` varchar(5) NOT NULL,
+  `state` varchar(2) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `latitude` double NOT NULL,
+  `longitude` double NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
