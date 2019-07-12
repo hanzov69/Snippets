@@ -1,0 +1,988 @@
+/* 
+Logahead Greenery Theme by Klaus Schlichter
+www.logahead.com
+
+Originally Adapated from Greenery Theme by snop (OSWD)
+Credit: Design by Pat Heard http://fullahead.org / WP templates by DL2 Media http://www.dl2media.com
+Licence: GPL
+
+Icons Courtesy of: http://www.famfamfam.com/lab/icons/silk/
+ ------------------------------------------------------------------------------*/
+ 
+/* Main Structure
+ ------------------------------------------------------------------------------*/
+ 
+body {
+  margin: 0;  
+  text-align: center;
+  font: 0.62em verdana, arial, sans-serif;  
+  line-height: 130%;
+  color: #EEE;
+  background: #585858 url(images/bg_body.jpg) repeat-y top center;
+}
+
+a, a:visited {
+  color: #86E160;
+}
+
+a:hover {
+  color: #FFF;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+} 
+
+h1 {
+  margin: 10px 0;
+  font: 700 1em verdana, sans-serif;
+  text-transform: uppercase;
+  color: #7BD32C;
+}
+
+form h1 {
+  margin:0;
+}
+
+.post h1, .post h1 a, .post h1 a:visited {
+  margin: 10px 0;
+  font: 700 1em verdana, sans-serif;
+  text-transform: uppercase;
+  text-align: left;  
+  color: #7BD32C;
+}
+
+.post>h1 {
+  background: #686868 url(images/rounded_tr.gif) no-repeat top right;
+  padding: 5px;
+}
+
+#posts h1 span {
+  display: block;
+  padding: 2px;
+  background: url(images/rounded_br.gif) no-repeat bottom right;
+}
+
+#sidebar h1 {
+  clear: both;
+  text-align: right;
+  background: #686868 url(images/rounded_tl.gif) no-repeat top left;
+  padding: 5px;
+}
+
+#sidebar #form_select h1, #sidebar #flickr h1 {
+  background: none;
+  padding: 0;
+}
+
+#sidebar h1 span {
+  display: block;
+  padding: 2px;
+  background: url(images/rounded_bl.gif) no-repeat bottom left;
+}
+
+
+#kontent ol li { 
+  color: #86E160;
+}
+
+#kontent ol li span {
+  color: #EEE;
+}
+
+#kontent ul ul, #search_results {
+  padding-bottom: 10px;
+}
+
+#text ul li {
+  list-style-image: url(images/li_bullet.gif);
+  text-indent:0;
+}
+
+blockquote {  
+  margin: 0;
+  background: #686868 url(images/rounded_tr.gif) no-repeat top right;
+} 
+
+blockquote span {
+  display: block;
+  padding: 5px;
+  background: url(images/rounded_br.gif) no-repeat bottom right;
+}
+
+/***************************************************
+  Site Title
+ ***************************************************/
+ 
+#greentitle {
+  padding: 0.6em 55px 0.6em 0;
+  margin-right: 0.5em;
+  float: right;
+  background: url(images/logo_greenery.gif) no-repeat top right;
+}
+
+#greentitle h1 {
+  display: inline;
+  color:  #222;
+  background-color: #86E160;
+  background-image: none;
+  text-decoration: none;
+}
+
+/***************************************************
+  Layout Element Styles
+ ***************************************************/
+ 
+#header {  
+  width: 100%;
+  height: 3em;
+  background: #585858 url(images/bg_header.jpg) repeat-y top center;  
+}
+
+/***************************************************
+  Header Menu
+ ***************************************************/
+
+#menu {
+  width: 767px;
+  margin: 0 auto;
+  text-align: left;  
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;  
+}
+
+#menu ul li {
+  width: 8em;
+  display: inline;
+  float: left;
+  padding-top: 0.8em;  
+  list-style: none;
+  text-align: center;
+}
+
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 1.0em;
+  color: #222;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+  font-weight: bold;
+  color: #111;
+  background: url(images/menu_tab.gif) no-repeat bottom center;
+}
+
+/***************************************************
+ Page Content
+ ---------------------------------------------------
+ 1. Left side text
+ 2. Dropdown image
+ 3. Right side bar 
+ ***************************************************/
+
+#kontent {  
+  clear: both;
+  width: 767px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+textarea#kontent {
+  width:90%;
+}
+
+#text {
+  float: left;
+  width: 410px;
+  padding: 10px 5px 20px 20px;
+}
+
+#image {
+  float: left;
+  width: 170px;  
+  vertical-align: top;
+}
+
+#plant
+{
+	background-image: url(flickrey.php);
+	height: 604px;
+	width: 166px;
+}
+
+#sidebar {
+  float: right;
+  width: 145px;
+  padding: 20px 15px 20px 0;
+  overflow: hidden;
+}
+
+.previousnext {
+	border-top:	6px solid #686868;
+	}
+
+.previousnextentries h3 {
+  background: #686868 url(images/rounded_tr.gif) no-repeat top right;
+  padding: 0 5px;
+  height: 22px;
+	}  
+
+.previousnextentries h3, .previousnextentries h3 a, .previousnextentries h3 a:visited {
+  margin-top: 5px;
+  font: 700 1em verdana, sans-serif;
+  text-transform: uppercase;
+  text-align: left;  
+  color: #7BD32C;
+  }
+
+.previousentries {
+	float: left;
+  }
+  
+.nextentries {
+	float: right;
+	} 
+  
+/***************************************************
+ Footer
+ ***************************************************/
+
+#footer {
+	clear: both;
+	float: none;
+	width: 500px;
+	color: #888;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+
+#footer p {
+  padding-top: 0;
+}
+
+#footer a {
+  color: #888;
+}
+
+#footer a:hover {
+  color: #EEE;
+}
+	
+.post {
+	position: relative;
+	}
+	
+#comments {
+	border-top:	6px solid #686868;
+	}
+	
+.settings {
+	position: relative;
+	text-align: justify;
+	margin-bottom: 10px;
+	}
+	
+.updatepost {
+	position: relative;
+	text-align: justify;
+	margin-top: 10px;
+	border-top:	6px solid #686868;
+	}
+	
+.title {
+	position: relative;
+	}
+
+/* Toolbar
+ ------------------------------------------------------------------------------*/	
+#toolbar {
+	overflow: hidden;
+	background-color: #86E160;
+	text-align: left;
+	position: relative; 
+	top: 0px;
+  left: 1px;
+	padding: 0px;
+	margin: 0 auto;
+	height: 50px;
+	width: 768px;
+	}
+	
+.toolbar img, .toolbar img:hover {
+	position: relative;
+	top: -11px;
+	float: left;
+	right: 30px;
+	border: none;
+	}
+	
+.login, .logindown {
+	position: relative;
+	border:none;
+	float: left;
+	left: 30px;
+	top: 19px;
+	width: 16px;
+	height: 16px;
+	background: url("admin.gif") no-repeat;
+	}
+	
+.listen {
+	top: 38px;
+	right: 0px;
+	display: inline;
+	position: absolute;
+	border:none;
+	background: url("listen.gif") left no-repeat;
+	height: 12px;
+	text-indent: 24px;
+	}
+	
+.newpost, .newpostdown {
+	position: relative;
+	border:none;
+	float: left;
+	left: 47px;
+	top: 19px;
+	width: 16px;
+	height:16px;
+	background: url("newpost.gif") no-repeat;
+	}
+	
+.advanced, .advanceddown {
+	position: relative;
+	border:none;
+	float: left;
+	left: 62px;
+	top: 18px;
+	width: 16px;
+	height:16px;
+	background: url("advanced.gif") no-repeat;
+	}
+	
+.time, .timedown {
+	position: relative;
+	border:none;
+	float: left;
+	left: 77px;
+	top: 19px;
+	width: 16px;
+	height: 16px;
+	background: url("clock.gif") no-repeat;
+	}
+	
+.layout, .layoutdown {
+	position: relative;
+	border:none;
+	float: left;
+	left: 92px;
+	top: 19px;
+	width: 16px;
+	height: 16px;
+	background: url("layout.gif") no-repeat;
+	}
+	
+.users, .usersdown {
+	position: relative;
+	border:none;
+	float: left;
+	left:104px;
+	top: 19px;
+	width: 16px;
+	height: 16px;
+	background: url("user.gif") no-repeat;
+	}
+	
+.plugin, .plugindown {
+	position: relative;
+	border:none;
+	float: left;
+	left:116px;
+	top: 19px;
+	width: 16px;
+	height: 16px;
+	background: url("plugin.gif") no-repeat;
+	}
+	
+.toolup {
+	top: 55px;
+	left: 0px;
+	padding: 0;
+	margin: 0 auto;
+	height: 30px;
+	width: 30px;
+	background: url('toolup.gif') no-repeat top center;
+	}
+	
+.tooldown {
+	top: 5px;
+	left: 0px;
+	padding: 0;
+	margin: 0 auto;
+	height: 30px;
+	width: 30px;
+	background: url('tooldown.gif') no-repeat top center;
+	}
+	
+/* Sidetabs
+ ------------------------------------------------------------------------------*/
+#tab{
+	position: absolute; 
+	background-color: transparent;
+	z-index:4;
+	}
+	
+.sideleft {
+	top: -0px;
+	overflow:hidden;
+	position: absolute; 
+	margin: auto auto auto -40px;
+	height: 82px;
+	width: 23px;
+	background: url('defaulttab.gif') no-repeat bottom center;
+	}
+	
+.commenttab { 
+	top: -0px;
+	float: left;
+	overflow:hidden;
+	position: relative; 
+	margin-top: 0px;
+	margin-left: -40px;
+	height: 82px;
+	width: 23px;
+	background: url('defaulttab.gif') no-repeat bottom center;
+	}
+	
+.deletecomment {
+	position: relative;
+	border:none;
+	float: right;
+	right: 4px;
+	top: 38px;
+	width: 16px;
+	height: 82px;
+	z-index: 5;
+	background: url("delete.gif") no-repeat;
+	}
+	
+.editcomment {
+	position: relative;
+	border:none;
+	float: right;
+	right: 4px;
+	top: 20px;
+	width: 10px;
+	height: 10px;
+	background: url("edit.gif") no-repeat;
+	}
+
+.updatecomment {
+	position: relative;
+	text-align: justify;
+	margin-top: 10px;
+	border-top:	6px solid #686868;
+}
+	
+.delete {
+	position: relative;
+	border:none;
+	float: right;
+	right: 4px;
+	top: 35px;
+	width: 16px;
+	height: 16px;
+	background: url("delete.gif") no-repeat;
+	}
+	
+.edit {
+	position: relative;
+	border:none;
+	float: right;
+	right: 4px;
+	top: 18px;
+	width: 10px;
+	height: 10px;
+	background: url("edit.gif") no-repeat;
+	}
+	
+/* Images and Drag Handles
+ ------------------------------------------------------------------------------*/
+img {
+	margin: 10px 0;
+	border:1px solid #000;
+	z-index:5;
+	}
+	
+.noborder img {
+	float: right;
+	position: relative;
+	top: -11px;
+	border: none;
+	}
+	
+.drag img {
+	display: none;
+	float: left;
+	position: relative;
+	top: 0px;
+	margin-top: -29px;
+  margin-left: 4px;
+	border: none;
+	}
+	
+.dragdis img {
+	cursor: move;
+	display: inline;
+	float: left;
+	position: relative;
+	top: 0px;
+	margin-top: -29px;
+  margin-left: 4px;
+	border: none;
+	}
+
+/* Sidebar
+ ------------------------------------------------------------------------------*/
+
+#search_results {
+	padding: 25px 0px 10px 0px; 
+  width: 100%;
+	min-height: 1em;
+	}
+#sidebar form {
+	padding:0;margin:0;
+	}
+#sidebar ul {
+  padding:0;
+}
+#sidebar ul ul {
+  padding-left:20px;
+}
+	
+p {
+padding:0;margin:14px 0;
+	}
+ 
+xp { 
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Text Body
+ ------------------------------------------------------------------------------*/
+h2, h3, h5 {
+	font-size: 10px;
+	text-align: left;
+	color: white;
+	font-weight: normal;
+	text-decoration: none;
+	}
+  
+h2 a, h2 a:visited, h2 a:hover {
+	font-size: 10px;
+	text-align: left;
+	color: #7BD32C;
+	font-weight: normal;
+	text-decoration: none;
+	}
+
+h3, h3 a, h3 a:visited, h5, h5 a, h5 a:visited {
+	padding:0;margin:10px 0;
+	text-decoration: none;
+	}
+
+.cont {
+	font-size: 10px;
+	text-align: left;
+	font-weight: normal;
+	}
+	
+.cont  a, .cont	 a:visited {
+	text-decoration: none;
+  padding:0; margin:0;
+	}
+	
+.cont  a:hover {
+	color: white;
+	}
+		
+/***************************************************
+ Comment Styles
+ ***************************************************/
+
+#barcomments p {
+  padding: 0 5px;
+  margin-bottom: 0;
+  background: #686868 url(images/rounded_tl.gif) no-repeat top left;
+}
+
+#barcomments p span.author {
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+  font-weight: 700;
+}
+
+#barcomments img {
+  margin-top: -1px;
+}
+
+#barcomments a {
+  color: #7BD32C;
+}
+
+#barcomments a:visited {
+  color: #7BD32C;
+}
+
+#barcomments a:hover {
+  color: #FFF;
+}  
+  
+/* Commments
+ ------------------------------------------------------------------------------*/
+.commentlink {
+	display: inline;
+	position: relative;
+	font-size: 10px;
+	text-align: left;
+	color: #ccc;
+	font-weight: normal;
+	top: -11px;
+	}
+	
+.commentlink a {
+	font-size: 10px;
+	text-align: left;
+	color: #ccc;
+	text-decoration: none;
+	font-weight: normal;
+	}
+	
+.commentlink a:hover {
+	font-size: 10px;
+	text-align: left;
+	color: white;
+	font-weight: normal;
+	}
+	
+#addcomment {
+	padding-top: 10px;
+	margin: 0px 0 0;
+	border-bottom: none;
+	border-top:	6px solid #686868;
+	}
+	
+/* Tooltips
+ ------------------------------------------------------------------------------*/
+.tooltip {
+	display: inline;
+	position: relative;
+	font-size: 10px;
+	text-align: left;
+	color: #ccc;
+	font-weight: normal;
+	}
+	
+.tooltip a, .tooltip a:visited {
+	color: #7BD32C;
+	text-decoration: none;
+	}
+	
+.choice {
+	font-size: 10px;
+	text-align: left;
+	color: #ccc;
+	font-weight: normal;
+	}
+	
+.checkchoice {
+	display: block;
+	position: relative;
+	margin-top: -13px;
+  padding-bottom:5px;  
+	left: 150px;
+	}
+
+/* Lists and Widgets
+ ------------------------------------------------------------------------------*/	
+#sidebarorder { 
+	padding:0;margin:0;
+	list-style-type:none;
+	}
+   
+.sidebarorder li {
+	cursor: default;
+	text-align: left;
+	list-style-type: none;
+	list-style-image: none;
+	text-decoration: none;
+	font-size: 10px;
+	}
+	
+.other li {
+	text-align: left;
+  list-style-image: url(images/li_bullet.gif);
+	text-decoration: none;
+	font-size: 10px;
+	border: none;
+	text-indent: 0px;
+	}
+
+div.dropmarker {
+	  height: 2px;
+    width:100%;
+	  background-color: #ccc;
+	  margin-top:-3px;
+	  margin-left:-5px;
+	  z-index:1000;
+	  overflow: hidden;
+	  }
+	
+.sidewidget {
+  width:100%;
+	}
+	
+#widgetform {
+	margin-bottom: 20px;
+	}
+  
+#widgetform h1 {
+  text-align: left;
+  background: none;
+	}
+#widgetform h1 {
+	margin-left: 25px;
+	}  
+#widgetform h1 .checkchoice {
+	display: block;
+	position: relative;
+	margin-top: -13px;
+	left: -25px;
+	}
+	
+/* Livesearch and Loading Indicators
+ ------------------------------------------------------------------------------*/
+.loading {
+	float: right;
+	background: url('loading.gif') no-repeat;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	top: 2px;
+	left: -25px;
+	z-index: 1000;
+	} 
+
+.idle {
+	float: right;
+	background: transparent;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	top: 2px;
+	left: -25px;
+	z-index: 1000;
+	} 
+
+.loadingother {
+	display: block;
+	background: url('loading.gif') no-repeat;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	padding-bottom: 10px;
+	top: 9px;
+	z-index: 1000;
+	} 
+	
+input[type=text], input[type=search], textarea {
+	color: #444;
+	padding: 2px 0 2px 2px;
+	margin: 0;
+	border: 1px solid #000;
+	}
+	
+.livestyle {
+	position: relative;
+	float: right;
+  right: 0px;
+  width: 96%; 
+	}
+
+/* Flickr Widget Styling
+ ------------------------------------------------------------------------------*/
+#flickr {
+	padding-top: 5px;
+	}
+	
+.flickr img {
+	padding:4px;
+	margin: 2px 2px;
+	border: 1px solid #000;
+	}
+ 
+.flickr img:hover {
+	padding:4px;
+	margin: 2px 2px;
+	border: 1px solid #7BD32C;
+	}
+ 
+.flickr h2 {
+	color: #F2F2F2;
+	background-color: #F2F2F2;
+	}
+	
+.flickr h2 a {
+	color: #F2F2F2;
+	background-color: #F2F2F2;
+	}
+	
+.flickr h2 a:visited {
+	color: #F2F2F2;
+	background-color: #F2F2F2;
+	}
+	
+.flickr h2 a:hover {
+	color: #F2F2F2;
+	background-color: #F2F2F2;
+	}
+	
+/* Forms and Buttons
+ ------------------------------------------------------------------------------*/
+.frmcontent {
+	font-family: Verdana, Sans-serif;
+	font-size: 12px;
+	text-align: left;
+	color: #333;
+	font-weight: normal;
+	}
+	
+.button {
+	background: url(button.gif);
+	background-color: white;
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	position: relative;
+	float: none;
+	left: 0px;
+	top: 0px;
+	cursor: pointer;	
+	}
+	
+.buttonup {
+	background: url(button.gif);
+	background-color: white;
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+	
+.buttondown {
+	background: url(button.gif);
+	background-color: white;
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+	
+.sidebuttons {
+	position: relative;
+	text-align: center;
+	}
+
+.button:active {
+	background: url(button.gif);
+	background-color: white;
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+
+.podcast, .trackback, .commenttime {
+	background: url(podcast.gif);
+	background-color: white;
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+	
+.podcast:active, .trackback:active, .commenttime:active {
+	background: url(podcast.gif);
+	background-color: white;
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+  
+.trackback, .trackback:active {
+	background: url(trackback.gif);
+}
+.commenttime, .commenttime:active {
+	background: url(commenttime.gif);
+}
+  
+.password {
+	font-size: 12px;
+	background-color: white;
+	border: 1px solid #000;
+	color: #000;
+	font-family: Verdana, Sans-serif;
+	margin: 1px;
+	padding: 3px;
+	font-weight: normal;
+	text-align: left;
+	}
+	
+.frmpost textarea, .frmpost input, .frmpost select, .frmpost password {
+	font-size: 12px;
+	background: transparent;
+	border: 1px solid #000;
+	color: #000;
+	font-family: Verdana, Sans-serif;
+	margin: 1px;
+	padding: 3px;
+	}
+	
+.frmpost button {
+	background: url(button.gif);
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+
+.frmpost button:active {
+	background: url(buttonpress.gif);
+	font-size: 10px;
+	border: none;
+	height: 27px;
+	width: 66px;
+	}
+
+.sideoptions {
+	width: 100%;
+	}
+
+/* End
+ ------------------------------------------------------------------------------*/

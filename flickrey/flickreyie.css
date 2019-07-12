@@ -1,0 +1,56 @@
+/* 
+Logahead Greenery Theme by Klaus Schlichter
+www.logahead.com
+
+Originally Adapated from Greenery Theme by snop (OSWD)
+Credit: Design by Pat Heard http://fullahead.org / WP templates by DL2 Media http://www.dl2media.com
+Licence: GPL
+
+Icons Courtesy of: http://www.famfamfam.com/lab/icons/silk/
+ ------------------------------------------------------------------------------*/
+	
+/* Sidetabs
+ ------------------------------------------------------------------------------*/	
+.sideleft {
+	margin: auto auto auto -40px;
+	}
+	
+.commenttab {
+	margin-top: -20px;
+	margin-left: -40px;
+	height: 100px;
+	}
+	
+.deletecomment {
+	top: 53px;
+	}
+  
+.editcomment {
+	top: 36px;
+	}
+
+/* Sidebar
+ ------------------------------------------------------------------------------*/
+#sidebar ul ul {
+  padding-left:0px;
+}
+	
+#search_results {
+	margin-top: -45px;
+	}
+  
+/* Lists and Widgets
+ ------------------------------------------------------------------------------*/	
+.other {
+	display: block;
+	height: 1%;
+  margin: 0px;
+	}
+.other li {
+  list-style-type: none;
+  list-style-image: none;
+  }
+  
+/* End
+ ------------------------------------------------------------------------------*/
+ 
